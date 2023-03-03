@@ -1,0 +1,37 @@
+.container{
+    width: 100%;
+    height: 300px;
+    padding: 30px 0;
+    position: relative;
+    background-color: #212121;
+
+}
+.containerDentro{
+    display: flex;
+}
+.titulo{
+    color: #EAC774;
+    font-weight: 600;
+    font-size: 17px;
+}
+.subtitulo{
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.texto{
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
+.containerSetor{
+    width: 300px;
+    padding: 40px 20px;
+}
+.containerSocial{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
