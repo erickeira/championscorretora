@@ -52,13 +52,25 @@ export default function Rodape(){
                         Seguros
                     </div>
                     <div className={`${styles.texto}`} style={{paddingTop: 15}}>
-                        Seguro de vida
+                        DIT - Diária por afastamento do trabalho 
                     </div>
                     <div className={`${styles.texto}`} style={{paddingTop: 15}}>
-                        Seguro auto
+                        Previdência privada ( PGBL, VGBL ) 
                     </div>
                     <div className={`${styles.texto}`} style={{paddingTop: 15}}>
-                        Seguro saúde
+                        Seguro por morte qualquer motivo 
+                    </div>  
+                    <div className={`${styles.texto}`} style={{paddingTop: 15}}>
+                        Invalidez acidental e morte acidental 
+                    </div>  
+                    <div className={`${styles.texto}`} style={{paddingTop: 15}}>
+                        Seguro Resgatável 
+                    </div>  
+                    <div className={`${styles.texto}`} style={{paddingTop: 15}}>
+                        Responsabilidade Civíl 
+                    </div>  
+                    <div className={`${styles.texto}`} style={{paddingTop: 15}}>
+                        Seguro de diagnóstico de doenças graves
                     </div>    
                 </div>
             </div>

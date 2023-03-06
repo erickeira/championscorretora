@@ -51,10 +51,10 @@
     .container{
         background-color: #1d1d1d;
         width: 100%;
-        min-height: 120px;
+        min-height: 100px;
     }
     .containerNav{
-        min-height: 120px;
+        min-height: 90px;
         align-items: center;
         padding: 20px 30px;
     }

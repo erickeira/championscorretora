@@ -1,7 +1,4 @@
 @media screen and (min-width: 831px) {
-    .main{
-        padding-bottom: 100px;
-    }
     .containerForaFraseBotaoCards{
         width: 100%;
         min-height: 450px;
@@ -36,6 +33,17 @@
         color: #fff;
         cursor: pointer;
     }
+    .containerSlider{
+        position: relative;
+        width: 100%;
+    }
+    .containerImagemSlider{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        height: 350px;
+    }
     .containerSegurosTopo{
         display: flex;
         gap: 10px;
@@ -46,7 +54,7 @@
 
     .containerCardSeguroTopo{
         width: 430px;
-        height: 350px;
+        min-height: 350px;
         background-color: #fff;
         border-radius: 29px;
         overflow: hidden;
@@ -58,7 +66,7 @@
         box-shadow: rgba(234, 223, 3, 0.2) 0px 7px 29px 0px;
     }
     .containerTituloDescricaoCardSeguroTopo{
-        height: calc(40% - 40px);
+        min-height: 80px;
         padding: 20px;
     }
     .tituloCardSeguroTopo{
@@ -74,7 +82,7 @@
     .imagemCardSeguroTopo{
         position: relative;
         width: 100%;
-        height: 60%;
+        height: 70%;
         overflow: hidden;
     }
 
@@ -93,7 +101,6 @@
         align-items: center;
         width: 100%;
         border-top: 0.3px dashed #666;
-        border-bottom: 0.3px dashed #666;
         /* background-color: aqua; */
     }
     .tituloParceiros{
@@ -141,9 +148,6 @@
     }
 }
 @media screen and (max-width: 830px) {
-    .main{
-        padding-bottom: 100px;
-    }
     .containerForaFraseBotaoCards{
         width: 100%;
         min-height: 450px;
@@ -185,7 +189,7 @@
     
     .containerCardSeguroTopo{
         width: 430px;
-        min-height: 350px;
+        min-height: 340px;
         background-color: #fff;
         border-radius: 29px;
         overflow: hidden;
@@ -197,7 +201,7 @@
         box-shadow: rgba(234, 223, 3, 0.2) 0px 7px 29px 0px;
     }
     .containerTituloDescricaoCardSeguroTopo{
-        height: calc(40% - 40px);
+        min-height: 70px;
         padding: 20px;
     }
     .tituloCardSeguroTopo{
@@ -213,7 +217,7 @@
     .imagemCardSeguroTopo{
         position: relative;
         width: 100%;
-        height: 60%;
+        height: 70%;
         overflow: hidden;
     }
     
@@ -232,7 +236,6 @@
         align-items: center;
         width: 100%;
         border-top: 0.3px dashed #666;
-        border-bottom: 0.3px dashed #666;
         padding: 30px 0;
         /* background-color: aqua; */
     }
