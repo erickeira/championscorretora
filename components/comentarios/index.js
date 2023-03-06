@@ -17,14 +17,14 @@ export default function Comentarios(){
                 </div>
                 <div className={styles.containerComentarioAspas}>
                     <div className={styles.aspasLeft}>
-                        <ImQuotesLeft size={30} color={'#EAC774'} />
+                        <ImQuotesLeft className={styles.aspas} color={'#EAC774'} />
                     </div>
                     
                     <div className={styles.containerComentario}>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     </div>
                     <div className={styles.aspasRight}>
-                        <ImQuotesRight size={30} color={'#EAC774'} style={{position: 'absolute', bottom: 0}}/>
+                        <ImQuotesRight className={styles.aspas} color={'#EAC774'} style={{position: 'absolute', bottom: 0}}/>
                     </div>
                 </div>
                 <div className={styles.containerPessoa}>

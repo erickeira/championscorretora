@@ -26,10 +26,13 @@ export default function Home() {
     )
   }
 
-  const CardSeguroTopo = () => {
+  const CardSeguroTopo = (props) => {
+    const { titulo, descricao, icone } = props
+    let Icone = icone
     return(
         <div className={`${styles.containerCardSeguroTopo}`}>
             <div className={`${styles.containerTituloDescricaoCardSeguroTopo}`}>
+                <Icone size={25} color={'#EAC774'} />
                 <div className={`${styles.tituloCardSeguroTopo}`}>Seguro de vida</div>
                 <div className={`${styles.descricaoCardSeguroTopo}`}>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
@@ -58,6 +61,7 @@ export default function Home() {
       </Head>
 
       <div className={`${styles.containerForaFraseBotaoCards}`}>
+        <div className={`${styles.containerCinza}`}/>
         <div className={`${styles.containerFraseBotao} containerTela`}>
             <div className={`${styles.containerFrase}`}>
                 22 anos mantendo sua família segura.
@@ -67,9 +71,12 @@ export default function Home() {
             </div>
         </div>
         <div className={`${styles.containerSeguros} containerTela`}>
-            <CardSeguroTopo/>
-            <CardSeguroTopo/>
-            <CardSeguroTopo/>
+            <CardSeguroTopo icone={MdFavoriteBorder}/>
+            <CardSeguroTopo icone={MdFavoriteBorder}/>
+            <CardSeguroTopo icone={MdFavoriteBorder}/>
+            <CardSeguroTopo icone={MdFavoriteBorder}/>
+            <CardSeguroTopo icone={MdFavoriteBorder}/>
+            <CardSeguroTopo icone={MdFavoriteBorder}/>
         </div>
       </div>
       <main className={`${styles.main} containerTela`}>
@@ -100,15 +107,6 @@ export default function Home() {
                 className={styles.logoParceiros}
             />
           </div>
-        </div>
-
-        <div className={styles.containerSeguros}>
-          <CardSeguro titulo={'Seguro 01'} descricao={''} icone={MdFavoriteBorder}/>
-          <CardSeguro titulo={'Seguro 02'} descricao={''} icone={MdFavoriteBorder}/>
-          <CardSeguro titulo={'Seguro 03'} descricao={''} icone={MdFavoriteBorder}/>
-          <CardSeguro titulo={'Seguro 04'} descricao={''} icone={MdFavoriteBorder}/>
-          <CardSeguro titulo={'Seguro 05'} descricao={''} icone={MdFavoriteBorder}/>
-          <CardSeguro titulo={'Seguro 06'} descricao={''} icone={MdFavoriteBorder}/>
         </div>
       </main>
       <Comentarios/>

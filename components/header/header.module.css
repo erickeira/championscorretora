@@ -1,4 +1,9 @@
-
+@media screen and (min-width: 830px) {
+    .container{
+        background-color: #1d1d1d;
+        width: 100%;
+        min-height: 200px;
+    }
     .containerNav{
         display: flex;
         min-height: 120px;
@@ -6,18 +11,6 @@
         align-items: center;
         padding: 20px 30px;
 
-    }
-    .containerFundoPreto{
-        width: 100% ;
-        height: 200px;
-        position: absolute;
-    }
-    .fundoPreto{
-        background-color: #1d1d1d;
-        width: 100%;
-        height: 200px;
-        /* border-radius: 100%; */
-        margin: 0 auto;
     }
     .containerLinks{
         display: flex;
@@ -36,5 +29,78 @@
     .link:hover{
         color: #EAC774;
     }
+    .logo{
+        width: 250px;
+        height: 130px;
+        position: relative;
+    }
+    .botaoMenuMobile{
+        display: none;
+    }
+    .containerLinksMobile{
+        display: none;
+    }
+    .containerLinksMobileFechado{
+        display: none;
+    }
+    .linkMobile{
+        display: none;
+    }
+}
+@media screen and (max-width: 830px) {
+    .container{
+        background-color: #1d1d1d;
+        width: 100%;
+        min-height: 120px;
+    }
+    .containerNav{
+        min-height: 120px;
+        align-items: center;
+        padding: 20px 30px;
+    }
+    .containerLinks{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        margin: 0 auto;
+        /* height: 45px; */
+    }
+    .link{
+        display: none;
+    }
+    .logo{
+        width: 170px;
+        height: 90px;
+        position: relative;
+    }
+    .botaoMenuMobile{
+        display:block;
+    }
+    .containerLinksMobile{
+        max-height: 500px;
+        opacity: 1;
+        transition: max-height 0.25s ease-in, opacity 0.5s ease-in;
+        display: flex;
+        flex-direction: column;
+    }
+    .containerLinksMobileFechado{
+        display: block;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.25s ease-out;
+        overflow: hidden;
+        position: absolute;
+    }
+    .linkMobile{
+        width:  100%;
+        height: 42px;
+        text-align: end;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+    }
+}
 
 
