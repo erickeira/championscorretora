@@ -57,6 +57,7 @@ export default function Home() {
         <title>Champions Corretora</title>
         <meta name="description" content="Seguros, vida, previdência e capitalização" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="og:image" property="og:image" content={`share.png`} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
