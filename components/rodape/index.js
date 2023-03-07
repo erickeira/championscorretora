@@ -1,7 +1,11 @@
 import styles from './rodape.module.css'
 import { BsInstagram, BsWhatsapp} from 'react-icons/bs'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function Rodape(){
+    const router = useRouter()
+
     return(
         <div className={`${styles.container}`}>
             <div className={`${styles.containerDentro} containerTela`}>
@@ -35,15 +39,15 @@ export default function Rodape(){
 
                     <div className={`${styles.containerSocial}`}>
                         <BsInstagram size={20} color={'#fff'}/>
-                        <div className={`${styles.texto}`}>
+                        <Link href={'https://www.instagram.com/championscorretora/'} className={`${styles.texto}`}>
                             @championscorretora
-                        </div>
+                        </Link>
                     </div>
                     <div className={`${styles.containerSocial}`}>
                         <BsWhatsapp size={20} color={'#fff'}/>
-                        <div className={`${styles.texto}`}>
+                        <Link href={'https://wa.me/5567998512650?text=Gostaria+de+Saber+mais+sobre+os+Seguros+da+Corretora+Champions%21'} className={`${styles.texto}`}>
                             (67) 9 9851-2650
-                        </div>
+                        </Link>
                     </div>
 
                 </div>

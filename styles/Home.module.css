@@ -9,6 +9,7 @@
     }
 
     .containerFraseBotao{
+        width: 100%;
         padding-top: 100px;
         padding-bottom: 60px;
         display: flex;
@@ -20,29 +21,48 @@
         width: 500px;
         font-size: 50px;
         font-weight: 600;
+        color: #fff;
     }
     .containerBotaoCotacao{
-        width: 300px;
-        height: 20px;
+        width: 320px;
+
         margin: 20px 0;
         padding: 10px 0;
         border-radius: 25px;
         text-align: center;
         background-color: #000;
-        font-size: 16px;
+        font-size: 20px;
         color: #fff;
         cursor: pointer;
     }
+    .containerBotaoCotacao:hover{
+        color: #EAC774;
+    }
     .containerSlider{
-        position: relative;
-        width: 100%;
+        /* padding: 0 20px; */
+        /* height: 500px; */
+        background: linear-gradient(to bottom, #cecece, transparent);
     }
     .containerImagemSlider{
         display: flex;
         align-items: center;
         justify-content: center;
+        background-position: center;
         background-size: cover;
-        height: 350px;
+        height: 600px;
+        width: 100%;
+    }
+    .imagem1Slide{
+        background-image: url("../public/slide/image1.jpg");
+    } 
+    .imagem2Slide{
+        background-image: url("../public/slide/image2.jpg");
+    }
+    .imagem3Slide{
+        background-image: url("../public/slide/image3.jpg");
+    } 
+    .containerSegurosMobile{
+        display: none;
     }
     .containerSegurosTopo{
         display: flex;
@@ -53,8 +73,8 @@
     }
 
     .containerCardSeguroTopo{
-        width: 430px;
-        min-height: 350px;
+        width: 300px;
+        min-height: 260px;
         background-color: #fff;
         border-radius: 29px;
         overflow: hidden;
@@ -63,10 +83,12 @@
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
     .containerCardSeguroTopo:hover{
-        box-shadow: rgba(234, 223, 3, 0.2) 0px 7px 29px 0px;
+        transition: all .3s ease-in-out;
+        transform: scale(1.01);
+        /* box-shadow: rgba(234, 223, 3, 0.2) 0px 7px 29px 0px; */
     }
     .containerTituloDescricaoCardSeguroTopo{
-        min-height: 80px;
+        height: 100px;
         padding: 20px;
     }
     .tituloCardSeguroTopo{
@@ -82,13 +104,13 @@
     .imagemCardSeguroTopo{
         position: relative;
         width: 100%;
-        height: 70%;
+        height: 200px;
         overflow: hidden;
     }
 
     .imagemTopo:hover{
-        transition: all .3s ease-in-out;
-        transform: scale(1.05);
+        /* transition: all .3s ease-in-out;
+        transform: scale(1.05); */
     }
 
 
@@ -166,10 +188,10 @@
         max-width: 500px;
         font-size: 30px;
         font-weight: 600;
+        color: #fff;
     }
     .containerBotaoCotacao{
         width: 300px;
-        height: 20px;
         margin: 20px 0;
         padding: 10px 0;
         border-radius: 25px;
@@ -178,6 +200,39 @@
         font-size: 16px;
         color: #fff;
         cursor: pointer;
+    }
+    .containerSlider{
+        /* padding: 0 20px; */
+        /* height: 500px; */
+        background: linear-gradient(to bottom, #cecece, transparent);
+    }
+    .containerImagemSlider{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        background-size: cover;
+        height: 600px;
+        width: 100%;
+    }
+    .imagem1Slide{
+        background-image: url("../public/slide/image1.jpg");
+    } 
+    .imagem2Slide{
+        background-image: url("../public/slide/image2.jpg");
+    }
+    .imagem3Slide{
+        background-image: url("../public/slide/image3.jpg");
+    }
+    .slideSeguro{
+        display: none;
+    }
+    .containerSegurosMobile{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0;
     }
     .containerSegurosTopo{
         display: flex;

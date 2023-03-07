@@ -5,7 +5,7 @@ import Header from '@/components/header'
 import { loaderImg } from '@/utils'
 import { MdFavoriteBorder } from 'react-icons/md'
 import Comentarios from '@/components/comentarios'
-import { Slide } from 'react-slideshow-image';
+import { Slide, Fade} from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 
 
@@ -56,7 +56,20 @@ export default function Home() {
 
         </div>
     )
-}
+  }
+
+  const FraseBotao = () =>{ 
+    return(
+    <div className={`${styles.containerFraseBotao} containerTela`}>
+      <div className={`${styles.containerFrase}`}>
+          22 anos mantendo sua família segura.
+      </div>
+      <div className={`${styles.containerBotaoCotacao}`}>
+          Fazer cotação
+      </div>
+    </div>
+    )
+  }
 
   return (
     <>
@@ -72,37 +85,52 @@ export default function Home() {
 
       <div className={`${styles.containerForaFraseBotaoCards}`}>
         <div className={`${styles.containerCinza}`}/>
-        <div className={`${styles.containerFraseBotao} containerTela`}>
+        {/* <div className={`${styles.containerFraseBotao} containerTela`}>
             <div className={`${styles.containerFrase}`}>
                 22 anos mantendo sua família segura.
             </div>
             <div className={`${styles.containerBotaoCotacao}`}>
                 Fazer cotação
             </div>
+        </div> */}
+        <Fade
+          indicators={true}
+          cssClass={`${styles.containerSlider}`}
+          arrows={false}
+          autoplay={true}
+        >
+          <div className={`${styles.containerImagemSlider} ${styles.imagem1Slide}`} >
+            <FraseBotao/>
+          </div>
+          <div className={`${styles.containerImagemSlider} ${styles.imagem2Slide}`} >
+            <FraseBotao/>
+          </div>
+          <div className={`${styles.containerImagemSlider} ${styles.imagem3Slide}`} >
+            <FraseBotao/>
+          </div>
+        </Fade>
+        <div className={`${styles.slideSeguro} containerTela`}>
+          <Slide
+            cssClass={` containerTela`}
+            transitionDuration={900}
+            autoplay={false}
+          >
+            <div className={`${styles.containerSeguros} containerTela`}>
+                <CardSeguroTopo titulo={`Previdência privada ( PGBL, VGBL ) `} imagem={`previdencia.png`} descricao={'A Previdência Privada é o investimento ideal para garantir que você tenha qualidade de vida no futuro'} icone={MdFavoriteBorder}/>
+                <CardSeguroTopo titulo={`Seguro de Vida `} imagem={`seguromorte.png`} descricao={'O Seguro de Vida individual oferece proteção financeira para você, em vida, e para sua família em caso de seu falecimento.'} />
+                <CardSeguroTopo titulo={`Seguro Resgatável `}   imagem={`resgatavel.png`} descricao={'O seguro resgatável oferece cobertura financeira para o segurado em vida, permitindo que ele resgate parte do valor investido em momentos de necessidade.'}/>
+                <CardSeguroTopo titulo={`Responsabilidade Civíl `} imagem={`civil.png`} descricao={'O seguro de Responsabilidade Civil Profissional da Champions é um produto completo para eventuais falhas profissionais.'} />
+            </div>
+          </Slide>
         </div>
-        <Slide className={`${styles.containerBotaoCotacao}`}>
-            <div className={`${styles.containerImagemSlider}`}>
-                <div style={{ 'backgroundImage': `url(${images[0]})` }}>
-                    <span>Slide 1</span>
-                </div>
-            </div>
-            <div className={`${styles.containerImagemSlider}`}>
-                <div style={{ 'backgroundImage': `url(${images[1]})` }}>
-                    <span>Slide 2</span>
-                </div>
-            </div>
-            <div className={`${styles.containerImagemSlider}`}>
-                <div style={{ 'backgroundImage': `url(${images[2]})` }}>
-                    <span>Slide 3</span>
-                </div>
-            </div>
-        </Slide>
-        <div className={`${styles.containerSeguros} containerTela`}>
+
+        <div className={`${styles.containerSegurosMobile} containerTela`}>
             <CardSeguroTopo titulo={`Previdência privada ( PGBL, VGBL ) `} imagem={`previdencia.png`} descricao={'A Previdência Privada é o investimento ideal para garantir que você tenha qualidade de vida no futuro'} icone={MdFavoriteBorder}/>
             <CardSeguroTopo titulo={`Seguro de Vida `} imagem={`seguromorte.png`} descricao={'O Seguro de Vida individual oferece proteção financeira para você, em vida, e para sua família em caso de seu falecimento.'} />
-            <CardSeguroTopo titulo={`Seguro Resgatável `}   imagem={`resgatavel.png`}/>
-            <CardSeguroTopo titulo={`Responsabilidade Civíl `} descricao={'O seguro de Responsabilidade Civil prevê o reembolso referente a indenizações por danos corporais ou materiais, causados de maneira não intencional a terceiros, nas dependências da empresa ou no local de prestação de serviço.'}imagem={`civil.png`}/>
+            <CardSeguroTopo titulo={`Seguro Resgatável `}   imagem={`resgatavel.png`} descricao={'O seguro resgatável oferece cobertura financeira para o segurado em vida, permitindo que ele resgate parte do valor investido em momentos de necessidade.'}/>
+            <CardSeguroTopo titulo={`Responsabilidade Civíl `} imagem={`civil.png`} descricao={'O seguro de Responsabilidade Civil Profissional da Champions é um produto completo para eventuais falhas profissionais.'} />
         </div>
+
       </div>
       <main className={`${styles.main} containerTela`}>
         <div className={styles.containerParceiros}>

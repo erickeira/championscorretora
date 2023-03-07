@@ -5,15 +5,16 @@ import styles from './header.module.css'
 import { BiMenuAltRight } from 'react-icons/bi'
 import { MdClose } from 'react-icons/md'
 import React, { useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Header(){
     const [isMenuOpen, setIsMenuOpen] = useState(false)
-
+    const router = useRouter()
     return(
         <div className={`${styles.container}`}>
             <nav className={`${styles.containerNav} containerTela`}>
                 <ul className={`${styles.containerLinks}`}>
-                    <Link href={'/'} className={`${styles.link}`}>
+                    <Link href={'/'} className={`${styles.link}`} style={{color: router.pathname == "/" ? '#EAC774' : '#fff'}}>
                         INÍCIO
                     </Link>
                     <Link href={'/'} className={`${styles.link}`}>
